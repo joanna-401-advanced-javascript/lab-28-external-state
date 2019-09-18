@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './app';
-
-class Main extends React.Component {
+class App extends React.Component {
   render() {
-    return <App />;
+    return (
+      <React.Fragment>
+        <div>Name: </div>
+        <div># of Updates: </div>
+      </React.Fragment>
+    );
   }
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Main />, rootElement);
+ReactDOM.render(<App />, rootElement);
