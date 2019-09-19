@@ -1,12 +1,7 @@
 import React from 'react';
 
 export default class extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   handleChange = (event) => {
-    // this.setState({ name: event.target.value });
     event.preventDefault();
     this.props.handleName(event.target.value);
   };
